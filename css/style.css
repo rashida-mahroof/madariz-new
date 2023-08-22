@@ -23,7 +23,7 @@ body{
     --color-primary:#2e3c6d;
     --color-secondary:#fac462;
     --color-tertiary:#eb9c3f;
-    --color-grey:#9eaeae;
+    --color-grey:#b6c0c0;
     --color-white:#fff;
     --color-dark:#252323;
     --color-transparent:#2e3c6d9c;
@@ -58,20 +58,22 @@ section{
     padding: 60px 0;
 }
 .section-head{
+  text-transform: uppercase;
     font-weight: 800;
-    color: var(--color-tertiary);
+    color: var(--color-primary);
     /* text-align: center; */
-    padding: 1rem 0;
+    font-family: var(--font-primary);
+    padding-bottom: 1.5rem ;
     font-size: 28px;
 }
 .btn-main{
     width: max-content;
     
     background-color: var(--color-tertiary);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     padding: .5rem 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     margin-top: 15px;
     box-shadow: 1px 2px 5px 0 var(--color-grey);
@@ -429,6 +431,37 @@ nav{
     text-align: center;
     width: 60%;
   }
+.why .why-box{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  padding:  1rem;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 1px 1px 15px var(--color-grey);
+  transition: .5s ease-in-out;
+}
+.why .why-box h5{
+  margin-top: 1rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+}
+.why .why-box:hover{
+  transform: translateY(-10px);
+  box-shadow:  1px 1px 15px var(--color-transparent);
+}
+
+
+
+
+
+
+
+  /* -----------------------------mediaquery-------------------- */
   @media (max-width:920px) {
     .banner h1,.banner p{
       width: 100%;
