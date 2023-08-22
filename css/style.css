@@ -58,11 +58,11 @@ section{
     padding: 60px 0;
 }
 .section-head{
-    font-weight: 600;
+    font-weight: 800;
     color: var(--color-tertiary);
-    text-align: center;
-    padding: 3rem 0;
-    font-size: 32px;
+    /* text-align: center; */
+    padding: 1rem 0;
+    font-size: 28px;
 }
 .btn-main{
     width: max-content;
@@ -310,7 +310,10 @@ nav{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 30%;
+      
+    }
+    .navbar .nav-links .sidebar-logo img{
+      width: 40%;
     }
       .sidebar-logo  i,
       .navbar .bx-menu{
@@ -431,4 +434,14 @@ nav{
       width: 100%;
       padding: 5px 2rem;
     }
+    .navbar .logo {
+      width: 40%;
+  }
+  .about .row{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .about .about-img{
+    margin-top: 2rem;
+  }
   }
