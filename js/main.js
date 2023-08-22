@@ -39,13 +39,7 @@ jsArrow.onclick = function() {
 }
 
 
-$('#owl-carousel').owlCarousel({
-  loop: true,
-  margin: 30,
-  dots: true,
-  nav: true,
-  items: 2,
-})
+
 
 //partners section
 $(document).ready(function(){
@@ -68,5 +62,60 @@ $(document).ready(function(){
               slidesToShow: 3
           }
       }]
+  });
+});
+  //  banner CAROUSEL 
+jQuery(document).ready(function($) {
+  "use strict";
+
+  $('#banner').owlCarousel({
+      loop: true,
+      center: true,
+      items: 1,
+      margin: 0,
+      autoplay: true,
+      dots:true,
+      nav: true,
+      autoplayTimeout: 4500,
+      smartSpeed: 1800,
+      navText:["<i class='bx bxs-chevron-left'></i>"," <i class='bx bxs-chevron-right'></i>"],
+   
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1170: {
+          items: 1
+        }
+      }
+  });
+});
+  //  TESTIMONIALS CAROUSEL HOOK
+jQuery(document).ready(function($) {
+  "use strict";
+
+  $('#customers-testimonials').owlCarousel({
+      loop: true,
+      center: true,
+      items: 3,
+      margin: 0,
+      autoplay: true,
+      dots:true,
+      autoplayTimeout: 8500,
+      smartSpeed: 450,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1170: {
+          items: 3
+        }
+      }
   });
 });
