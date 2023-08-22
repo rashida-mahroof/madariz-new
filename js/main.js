@@ -119,3 +119,85 @@ jQuery(document).ready(function($) {
       }
   });
 });
+  //  milestones
+  jQuery(document).ready(function($) {
+    "use strict";
+  
+    $('#milestones').owlCarousel({
+        loop: true,
+        center: true,
+        items: 1,
+        margin: 0,
+        autoplay: true,
+        
+        nav: true,
+        autoplayTimeout: 4500,
+        smartSpeed: 1800,
+        navText:["<i class='bx bxs-chevron-left'></i>"," <i class='bx bxs-chevron-right'></i>"],
+     
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 1
+          },
+          1170: {
+            items: 3
+          }
+        }
+    });
+  });
+  //  chronicle
+  jQuery(document).ready(function($) {
+    "use strict";
+  
+    $('#chronicle').owlCarousel({
+        loop: true,
+        center: true,
+        items: 1,
+        margin: 0,
+        autoplay: true,
+        
+        nav: true,
+        autoplayTimeout: 4500,
+        smartSpeed: 1800,
+        navText:["<i class='bx bxs-chevron-left'></i>"," <i class='bx bxs-chevron-right'></i>"],
+     
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 1
+          },
+          1170: {
+            items: 3
+          }
+        }
+    });
+  });
+
+  //partners section
+$(document).ready(function(){
+  $('.milestones').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 2
+          }
+      }, {
+          breakpoint: 520,
+          settings: {
+              slidesToShow: 1
+          }
+      }]
+  });
+});
