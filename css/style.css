@@ -396,6 +396,8 @@ nav{
 
   /* banner */
   .banner{
+    background-position: center !important;
+    background-size: cover !important;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -415,6 +417,7 @@ nav{
     background-color: var(--color-transparent);
   }
   .banner h1{
+    text-align: center;
    margin-top: 10rem;
     font-weight: 900;
     width: 60%;
@@ -422,4 +425,10 @@ nav{
   .banner p{
     text-align: center;
     width: 60%;
+  }
+  @media (max-width:920px) {
+    .banner h1,.banner p{
+      width: 100%;
+      padding: 5px 2rem;
+    }
   }
