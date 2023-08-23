@@ -42,6 +42,7 @@ img{
     width: 100%;
 }
 a{
+  /* font-family: var(--font-secondary); */
     text-decoration: none !important;
     color: unset;
     
@@ -90,21 +91,45 @@ section{
 }
 nav{
     position: fixed;
-    /* top: 0; */
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    height: 70px;
+    height: max-content;
     background: var(--color-white);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     z-index: 99;
+  }
+  nav .login{
+    padding-right: 60px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+  }
+  nav .login a{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-secondary);
+    
+  }
+  nav .login a:hover{
+    
+    color: var(--color-primary);
+    
+  }
+  nav .login a:first-child{
+   margin-right: 8px;
+   border-right: 1px solid var(--color-grey);
+   padding: 0 10px;
   }
   .nav .top{
     display: flex;
     justify-content: flex-end;
   }
-  .nav .top ul{
-    display: inline-flex;
+  nav  ul{
+   margin-bottom: 0 !important;
    
   }
   nav .navbar{
@@ -726,6 +751,15 @@ padding: 5px;
   font-size: 13px;
  
 }
+.chronicle .owl-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.chronicle .owl-nav i{
+  
+    font-size: 35px;
+
+}
 .read-more{
   text-align: center;
   padding: 10px 0;
@@ -747,8 +781,8 @@ padding: 5px;
 	width:50px;
 	height:50px;
   z-index: 99;
-	bottom:40px;
-	right:40px;
+	bottom:30px;
+	right:30px;
 	background-color:var(--color-primary);
 	color:#FFF;
 	border-radius:50px;
@@ -894,8 +928,52 @@ footer .footer-top .social .s-icon-box:hover i{
 transform: rotate(360deg);
  
 }
+footer .footer-hed{
+  width: max-content;
+font-size: 16px;
+font-weight: 700;
+color: var(--color-primary);
+ border-bottom: 1px solid var(--color-transparent);
+ padding-bottom: 8px;
+ margin: 10px 0;
+ font-family: var(--font-primary);
+}
+footer ul{
+  list-style: none;
+}
+footer ul li{
+  
+  margin: 8px 0;
+}
+footer ul li a, footer a,footer p{
+  color: var(--color-dark);
+  transition: .5s;
+  font-size: 13px;
+  font-weight: 500;
+}
+footer ul li a:hover, footer a:hover{
+  letter-spacing: .6px;
+  color: var(--color-secondary);
 
 
+}
+footer .col-lg-3 i{
+  color: var(--color-primary);
+  font-size: 30px;
+  transition:.5s;
+  margin-right: 10px;
+
+}
+footer .copyright{
+  padding: 1rem 0;
+ margin-top: 30px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+
+}
 
   /* -----------------------------mediaquery-------------------- */
   @media (max-width:920px) {
@@ -926,4 +1004,218 @@ transform: rotate(360deg);
   .enquire {
     height: max-content;
   }
+  footer .col-lg-3{
+    text-align: center;
   }
+  footer .footer-hed{
+    border-bottom: unset;
+    text-align: center;
+    width: auto;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal{
+  background: var(--color-transparent) !important;
+  
+
+}
+
+/*-------------------------------------------------
+* Modal Style 2 CSS start
+*-----------------------------------------------*/
+.modal.show .modal-dialog {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+.modal-style-2 .modal-login {
+  width: 390px;
+  display: flex;
+}
+
+.modal-style-2 .modal-login a{
+  text-decoration: none !important;
+}
+
+.modal-style-2 .modal-login .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.modal-style-2 .modal-login .modal-header {
+  border-bottom: none;
+  position: relative;
+  justify-content: center;
+}
+
+.modal-style-2 .modal-login .close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.modal-style-2  .close:focus, .modal-style-2 .close:active {
+ outline: none !important;
+ box-shadow: none;
+}
+.modal-style-2 .modal-login h4 {
+  color: var(--style-2-color);
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0;
+  border-bottom: 0;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.modal-style-2 .modal-login .modal-content {
+  color: #999;
+  margin-bottom: 15px;
+  background: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+}
+
+.modal-style-2 .modal-login .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-style-2 .modal-login label {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.modal-style-2 .modal-login .modal-body {
+  padding: 0;
+}
+
+.modal-style-2 .modal-login .form-control {
+  min-height: 38px;
+  padding-left: 5px;
+  box-shadow: none !important;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  font-size: 13px
+}
+
+.modal-style-2 .modal-login .form-control:focus {
+  border-color: #ccc;
+}
+
+.modal-style-2 .modal-login .input-group-addon {
+  max-width: 42px;
+  text-align: center;
+  background: none;
+  border-width: 0 0 1px 0;
+  padding-left: 5px;
+  border-radius: 0;
+  margin-right: 10px;
+  padding-top: 15px;
+}
+
+.modal-style-2 .modal-login .btn {
+  font-size: 15px;
+  font-weight: bold;
+  background: var(--style-2-color);
+  border-radius: 25px;
+  border: none;
+  min-width: 140px;
+  padding: 10px;
+  outline: none !important;
+}
+
+.modal-style-2 .modal-login .btn:hover,
+.modal-style-2 .modal-login .btn:focus {
+  background: var(--style-2-color);
+}
+.modal-style-2  input:-internal-autofill-selected {
+  background-color: transparent !important;
+}
+.modal-style-2 .modal-login .hint-text {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+.modal-style-2 .modal-login .modal-footer {
+  color: #999;
+  border-color: #dee4e7;
+  text-align: center;
+  margin: 0 -25px -25px;
+  font-size: 13px;
+  justify-content: center;
+}
+
+.modal-style-2 .modal-login a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.modal-style-2 .modal-login a:hover {
+  text-decoration: none;
+}
+
+.modal-style-2 .modal-login a {
+  color: var(--style-2-color);
+  text-decoration: none;
+}
+
+.modal-style-2 .modal-login a:hover {
+  text-decoration: underline;
+}
+
+.modal-style-2 .modal-login .fa {
+  font-size: 16px;
+}
+
+
+.dark.modal-style-2 .modal-content{
+  background: #0b0b1f !important;
+  color: #fff!important;
+}
+.dark.modal-style-2 .close, .modal-style-2.dark .modal-login h4{
+  color:#fff!important;
+  background-color: unset;
+}
+.dark.modal-style-2 .modal-login .form-control{
+  background: transparent !important;
+  color: #fff;
+  border-color: #777;
+}
+.dark.modal-style-2 .modal-login .input-group-addon{
+  color:#9E9E9E;
+}
+.dark.modal-style-2 .modal-login .modal-footer{
+  border: none;
+}
+.dark.modal-style-2 .modal-login .btn{
+  background: #70807e;
+}
+.dark .text-danger{
+  color: #777!important;
+}
+
+@media only screen and (max-width: 360px) {
+  .modal-style-2 .modal-login {width: 100%; margin:5px;}
+  .modal-style-2 .modal-login form{width: 100%;}
+}
+
