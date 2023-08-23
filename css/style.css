@@ -153,6 +153,9 @@ nav{
    
     flex-direction: column;
   }
+  nav .navbar .nav-inner .search-box{
+    display: block;
+  }
   nav .navbar .nav-inner .d-inline-block{
     margin-bottom: -30px;
     display: flex !important;
@@ -313,6 +316,7 @@ nav{
     display: none;
   }
   @media (max-width:920px) {
+
     nav .navbar{
       max-width: 100%;
       padding: 0 25px;
@@ -330,8 +334,13 @@ nav{
     }
   }
   @media (max-width:800px){
+    nav .navbar .nav-inner .search-box{
+      display: none;
+    }
     nav{
-      /* position: relative; */
+     
+      height: 70px;
+     
     }
     .navbar .bx-menu{
       display: block;
