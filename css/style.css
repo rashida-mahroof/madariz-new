@@ -147,6 +147,22 @@ nav{
    width: 14%;
    
   }
+  nav .navbar .nav-inner{
+    display: flex;
+   
+   
+    flex-direction: column;
+  }
+  nav .navbar .nav-inner .d-inline-block{
+    margin-bottom: -30px;
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+  nav .navbar .nav-inner .d-inline-block a{
+  padding: 0 10px;
+  color: var(--color-primary);
+  font-size: 14px;
+  }
   nav .navbar .nav-links{
     line-height: 70px;
     height: 100%;
@@ -324,7 +340,7 @@ nav{
       top: 0;
       left: -100%;
       display: block;
-      max-width: 270px;
+      max-width: 85%;
       width: 100%;
       background:  var(--color-white);
       line-height: 40px;
@@ -1011,6 +1027,15 @@ footer .copyright{
     border-bottom: unset;
     text-align: center;
     width: auto;
+  }
+  nav .navbar .nav-inner{
+    flex-direction: column-reverse;
+  }
+  nav .navbar .nav-inner .d-inline-block{
+    display: flex !important;
+   
+    flex-direction: column !important;
+    margin-left: 10px;
   }
   }
 

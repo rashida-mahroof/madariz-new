@@ -24,35 +24,22 @@ navLinks.style.left = "-100%";
 }
 
 
-// Get all arrow elements
+// sidebar submenu open close js code
 let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-let moreArrow = document.querySelector(".more-arrow");
-let jsArrow = document.querySelector(".js-arrow");
-
-// Get all sub-menu elements
-let subMenus = document.querySelectorAll(".js-sub-menu");
-
-// Function to close all sub-menus
-function closeSubMenus() {
-  subMenus.forEach(subMenu => {
-    subMenu.classList.remove("show1", "show2", "show3");
-  });
-}
-
 htmlcssArrow.onclick = function() {
-  closeSubMenus(); // Close other sub-menus
-  navLinks.classList.toggle("show1");
+ navLinks.classList.toggle("show1");
 }
-
+let moreArrow = document.querySelector(".more-arrow");
 moreArrow.onclick = function() {
-  closeSubMenus(); // Close other sub-menus
-  navLinks.classList.toggle("show2");
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
 }
 
-jsArrow.onclick = function() {
-  closeSubMenus(); // Close other sub-menus
-  navLinks.classList.toggle("show3");
-}
+
+
 
 //partners section
 $(document).ready(function(){
