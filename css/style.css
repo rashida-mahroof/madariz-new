@@ -740,9 +740,72 @@ padding: 5px;
 .read-more:hover{
   color: var(--color-tertiary);
 }
+/* float icon */
+.float{
+	position:fixed;
+	width:50px;
+	height:50px;
+  z-index: 99;
+	bottom:40px;
+	right:40px;
+	background-color:var(--color-primary);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	box-shadow: 2px 2px 3px #999;
+}
 
+.float i{
+	font-size: 30px;
+}
+/* courses */
+.courses .course{
+  /* border: 1px solid #eee; */
+  border-radius: 6px;
+  margin: 10px;
+  transition:.5s ease-in-out;
+  padding: 30px 10px;
+  /* background-color: var(--color-white); */
+  background-color: var(--color-primary);
+  color: var(--color-grey);
+  cursor: pointer;
+  text-align: center;
+} 
 
+.courses .course:hover{
+  box-shadow: 2px 2px 3px var(--color-transparent);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+ 
+  border: 0;
+}
 
+.courses .course i{
+ font-size: 4rem;
+ color: var(--color-tertiary);
+ transition:.5s ease-in-out;
+}
+.courses .course:hover i{
+  transform: rotate(360deg);
+}
+.courses .course .course-title{
+  color: var(--color-white);
+  font-weight: 800;
+  transition:.5s ease-in-out;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.courses .course .course-btn a{
+  font-size: 14px !important;
+}
+.courses .course .course-btn a:hover{
+  background-color: var(--color-white);
+  color: var(--color-tertiary);
+ 
+}
   /* -----------------------------mediaquery-------------------- */
   @media (max-width:920px) {
     .banner h1,.banner p{
