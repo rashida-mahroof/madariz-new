@@ -24,22 +24,35 @@ navLinks.style.left = "-100%";
 }
 
 
-// sidebar submenu open close js code
+// Get all arrow elements
 let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-htmlcssArrow.onclick = function() {
- navLinks.classList.toggle("show1");
-}
 let moreArrow = document.querySelector(".more-arrow");
-moreArrow.onclick = function() {
- navLinks.classList.toggle("show2");
-}
 let jsArrow = document.querySelector(".js-arrow");
-jsArrow.onclick = function() {
- navLinks.classList.toggle("show3");
+
+// Get all sub-menu elements
+let subMenus = document.querySelectorAll(".js-sub-menu");
+
+// Function to close all sub-menus
+function closeSubMenus() {
+  subMenus.forEach(subMenu => {
+    subMenu.classList.remove("show1", "show2", "show3");
+  });
 }
 
+htmlcssArrow.onclick = function() {
+  closeSubMenus(); // Close other sub-menus
+  navLinks.classList.toggle("show1");
+}
 
+moreArrow.onclick = function() {
+  closeSubMenus(); // Close other sub-menus
+  navLinks.classList.toggle("show2");
+}
 
+jsArrow.onclick = function() {
+  closeSubMenus(); // Close other sub-menus
+  navLinks.classList.toggle("show3");
+}
 
 //partners section
 $(document).ready(function(){
