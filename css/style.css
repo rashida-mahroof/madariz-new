@@ -157,7 +157,7 @@ nav{
     display: block;
   }
   nav .navbar .nav-inner .d-inline-block{
-    margin-bottom: -30px;
+    margin-bottom: -32px;
     display: flex !important;
     justify-content: flex-end !important;
   }
@@ -462,11 +462,14 @@ nav{
   }
   #banner .owl-nav{
     display: flex;
-    justify-content:end;
     padding: 20px;
-    margin-top: -5rem;
+    /* margin-top: 50%; */
+    width: 100%;
     z-index: 99;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    align-items: flex-start;
+    justify-content: space-between;
   }
   #banner .owl-nav i{
     font-size: 3rem !important;
@@ -474,8 +477,7 @@ nav{
   }
   #banner .owl-nav button{
     width: 3rem;
-    background-color: var(--color-primary);
-    margin-right: 3px;
+    background-color: var(--color-transparent);
   }
   .banner .overlay{
 
