@@ -1484,3 +1484,103 @@ footer .copyright{
 .mission .mission-box:hover{
   box-shadow: 1px 1px 4px var(--color-transparent);
 }
+
+header{
+  background: url(../images/banner1.jpg);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+}
+header .overlay{
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+header .overlay h3{
+  color: var(--color-white);
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+ 
+  position: relative;
+ 
+  padding-top: 20%;
+
+  
+  -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+
+}
+
+.courses1 .c-box{
+ margin-bottom: 20px;
+ border: 1px solid #ccc;
+ border-radius: 6px;
+ 
+ transition:.5s;
+ overflow: hidden;
+ /* box-shadow: 1px 1px 4px var(--color-transparent); */
+
+}
+.courses1 .c-box:hover{
+  box-shadow: 1px 1px 4px var(--color-transparent);
+  /* transform: translateY(-10px); */
+  cursor: pointer;
+}
+.courses1 .c-box .img-bx{
+ height: 200px;
+ margin-bottom: 20px;
+ object-fit: contain;
+ overflow: hidden;
+ background-size: cover;
+ background-position: center;
+ transition: .5s;
+ }
+ .courses1 .c-box img{
+  transition: .4s;
+ }
+ .courses1 .c-box:hover img{
+  transform: scale(1.1);
+ }
+ .courses1 .c-box h4{
+  font-weight: 700;
+  font-size: 16px;
+  
+  margin-bottom: 10px;
+
+ }
+ .courses1 .c-box .c-details{
+  padding: 6px 10px 0;
+ }
+ .courses1 .c-box h6{
+  font-weight: 400;
+  font-size: 12px;
+margin-bottom: 8px;
+ }
+ .courses1 .c-box p{
+  font-size: 13px;
+ }
+ .courses1 .c-box a{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 20px  20px 0 0;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  transition:.5s;
+
+ }
+ .courses1 .c-box a:hover{
+  background-color: var(--color-secondary);
+ }
