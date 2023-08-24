@@ -249,12 +249,12 @@ nav{
   .links li .sub-menu .more:hover .more-sub-menu{
     display: block;
   }
-  .navbar .search-box{
+  .navbar .search-box,.navbar .search-box1{
     position: relative;
      height: 40px;
     width: 40px;
   }
-  .navbar .search-box i{
+  .navbar .search-box i,.navbar .search-box1 i{
     
     height: 100%;
     width: 100%;
@@ -266,7 +266,7 @@ nav{
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  .navbar .search-box .input-box{
+  .navbar .search-box .input-box,.navbar .search-box1 .input-box{
     position: absolute;
     right: calc(100% - 40px);
     top: 80px;
@@ -279,14 +279,14 @@ nav{
     transition: all 0.4s ease;
 
   }
-  .navbar.showInput .search-box .input-box{
+  .navbar.showInput .search-box .input-box,.navbar.showInput1 .search-box1 .input-box{
     top: 65px;
     opacity: 1;
     pointer-events: auto;
     background: var(--color-primary);
     z-index: 99;
   }
-  .search-box .input-box::before{
+  .search-box .input-box::before,.search-box1 .input-box::before{
     content: '';
     position: absolute;
     height: 20px;
@@ -296,7 +296,7 @@ nav{
     top: -6px;
     transform: rotate(45deg);
   }
-  .search-box .input-box input{
+  .search-box .input-box input,.search-box1 .input-box input{
     position: absolute;
     top: 50%;
     left: 50%;
