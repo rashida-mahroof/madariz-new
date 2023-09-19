@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css">
+    <title>Tabbed Interface with Bootstrap</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <ul class="nav nav-tabs" id="myTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="tab-1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">BA Accounting and Finance</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab-2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">BA Business Management</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab-3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">BSc Information Technology</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabsContent">
+        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
+            <h3>BA Accounting and Finance</h3>
+            <img src="images/img1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, sapiente doloremque! Natus explicabo recusandae inventore et labore quaerat asperiores qui quod fuga harum, quisquam repellat accusantium ea corrupti dolor adipisci.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, sapiente doloremque! Natus explicabo recusandae inventore et labore quaerat asperiores qui quod fuga harum, quisquam repellat accusantium ea corrupti dolor adipisci.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, sapiente doloremque! Natus explicabo recusandae inventore et labore quaerat asperiores qui quod fuga harum, quisquam repellat accusantium ea corrupti dolor adipisci.</p>
+        </div>
+        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
+            <p>Content for BA Business Management goes here.</p>
+        </div>
+        <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
+            <p>Content for BSc Information Technology goes here.</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
