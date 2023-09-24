@@ -1588,6 +1588,10 @@ margin-bottom: 8px;
  .admission img{
   margin: 10px 0;
  }
+ .admission .nav-pills{
+  position: sticky;
+  top: 100px
+ }
  .nav-pills .nav-link{
   padding: 15px 5px !important;
   color: var(--color-dark);
@@ -1597,4 +1601,22 @@ margin-bottom: 8px;
  .nav-pills .nav-link.active{
   background-color: var(--color-secondary) !important;
 color: var(--color-primary) !important;
+ }
+ .admission .overview-bx{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: 15px 0;
+ }
+ .admission .overview-bx .child{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 12px 0;
+ }
+ .admission .overview-bx i{
+  padding-right: 6px;
+  font-size: 22px;
+  color: var(--font-primary);
  }
